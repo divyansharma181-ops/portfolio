@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav class="nav container">
+        <div class="nav__logo">Your<span>Name</span></div>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__links">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#resume" class="nav__link">Resume</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">College Student • Aspiring Developer</p>
+          <h1 class="hero__title">
+            Hi, I'm <span>Your Name</span><br />
+            I build web experiences.
+          </h1>
+          <p class="hero__subtitle">
+            I'm a <span>Computer Science</span> student passionate about web
+            development, UI/UX, and building projects that solve real-world
+            problems.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Hire Me</a>
+          </div>
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Year</span>
+              <span class="hero__meta-value">3rd Year B.Tech</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Location</span>
+              <span class="hero__meta-value">City, Country</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Looking for</span>
+              <span class="hero__meta-value">Internships 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <div class="hero__image">
+            <!-- Replace this placeholder with your own photo -->
+            <div class="hero__avatar">Your Photo</div>
+          </div>
+          <div class="hero__tag hero__tag--primary">Web Development</div>
+          <div class="hero__tag hero__tag--secondary">UI / UX</div>
+          <div class="hero__tag hero__tag--tertiary">Programming</div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container section__inner section__inner--two-col">
+          <div>
+            <h2 class="section__title">About Me</h2>
+            <p class="section__subtitle">
+              A little bit about who I am and what I love doing.
+            </p>
+          </div>
+          <div class="section__content">
+            <p>
+              I'm a <strong>college student</strong> pursuing a degree in
+              <strong>Computer Science</strong>. I enjoy learning new
+              technologies, building projects, and collaborating with others on
+              creative ideas.
+            </p>
+            <p>
+              My interests include <strong>web development</strong>,
+              <strong>problem solving</strong>, and
+              <strong>open-source contributions</strong>. I'm always looking for
+              opportunities to improve my skills and gain real-world
+              experience.
+            </p>
+            <div class="about__highlights">
+              <div class="card card--highlight">
+                <h3>Education</h3>
+                <p>
+                  B.Tech in Computer Science<br />
+                  Your College Name<br />
+                  2022 &mdash; 2026
+                </p>
+              </div>
+              <div class="card card--highlight">
+                <h3>What I'm Looking For</h3>
+                <p>
+                  Summer internships, remote projects, and opportunities to
+                  work with experienced developers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section section--alt" id="skills">
+        <div class="container">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__subtitle">
+            Technologies and tools I am comfortable working with.
+          </p>
+
+          <div class="skills__grid">
+            <div class="skills__group">
+              <h3>Programming Languages</h3>
+              <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>Python</li>
+                <li>C++ / Java</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Web Technologies</h3>
+              <ul>
+                <li>HTML5, CSS3, Responsive Design</li>
+                <li>Basic React.js</li>
+                <li>REST APIs</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Tools & Platforms</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Figma (UI Design)</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Soft Skills</h3>
+              <ul>
+                <li>Teamwork & Communication</li>
+                <li>Problem Solving</li>
+                <li>Time Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">
+            Some of the projects I have worked on recently.
+          </p>
+
+          <div class="projects__grid">
+            <article class="card project">
+              <div class="project__badge">Featured</div>
+              <h3 class="project__title">Campus Events Portal</h3>
+              <p class="project__description">
+                A responsive web application for students to discover and
+                register for college events, built with HTML, CSS, and
+                JavaScript.
+              </p>
+              <ul class="project__tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project__links">
+                <a href="#" class="project__link" aria-label="View live project"
+                  >Live Demo</a
+                >
+                <a href="#" class="project__link" aria-label="View source code"
+                  >Source Code</a
+                >
+              </div>
+            </article>
+
+            <article class="card project">
+              <h3 class="project__title">Personal Finance Tracker</h3>
+              <p class="project__description">
+                A simple budgeting tool that helps students track their monthly
+                expenses and visualize spending with charts.
+              </p>
+              <ul class="project__tags">
+                <li>JavaScript</li>
+                <li>LocalStorage</li>
+              </ul>
+              <div class="project__links">
+                <a href="#" class="project__link">Source Code</a>
+              </div>
+            </article>
+
+            <article class="card project">
+              <h3 class="project__title">Portfolio Website</h3>
+              <p class="project__description">
+                The website you're currently viewing. Designed and developed
+                from scratch with a focus on clean layout and accessibility.
+              </p>
+              <ul class="project__tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project__links">
+                <a href="#" class="project__link">Source Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume -->
+      <section class="section section--alt" id="resume">
+        <div class="container section__inner section__inner--two-col">
+          <div>
+            <h2 class="section__title">Resume</h2>
+            <p class="section__subtitle">
+              Quick overview of my education and experience.
+            </p>
+          </div>
+          <div class="section__content">
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div class="timeline__content">
+                  <span class="timeline__date">2022 &mdash; 2026</span>
+                  <h3>B.Tech, Computer Science</h3>
+                  <p>Your College Name, City</p>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div class="timeline__content">
+                  <span class="timeline__date">Summer 2025</span>
+                  <h3>Web Development Intern</h3>
+                  <p>Company / Startup Name</p>
+                  <p>
+                    Worked on building responsive UI components, fixing bugs,
+                    and collaborating with senior developers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn--primary btn--small" download>
+              Download Resume (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container section__inner section__inner--two-col">
+          <div>
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle">
+              Feel free to reach out for internships, collaborations, or just to
+              say hi!
+            </p>
+          </div>
+          <div class="section__content">
+            <form class="contact__form" id="contact-form">
+              <div class="form__group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Send Message</button>
+              <p class="form__status" id="form-status" aria-live="polite"></p>
+            </form>
+
+            <div class="contact__info">
+              <h3>Connect</h3>
+              <ul>
+                <li><strong>Email:</strong> your.email@college.edu</li>
+                <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+                <li><strong>Location:</strong> City, Country</li>
+              </ul>
+              <div class="socials">
+                <a href="#" aria-label="GitHub profile">GitHub</a>
+                <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+                <a href="#" aria-label="LeetCode profile">LeetCode</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+        <a href="#home" class="footer__back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
